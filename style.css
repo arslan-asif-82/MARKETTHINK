@@ -91,6 +91,9 @@ h3 {
     #back{
         height: 700px;
     }
+    #h3-1 {
+        font-size: 20px;
+    }
 }
 @media (max-width:320px) {
     .butt {
