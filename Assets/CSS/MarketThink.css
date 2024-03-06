@@ -1,0 +1,113 @@
+.hero{
+    height: 655px;
+    background-image: url('/Assets/IMAGE/ab.jpg');
+    background-size: cover;
+}
+* {
+    font-family: rubik;
+    position: sticky;
+    z-index: 111;
+    overflow-x: hidden;
+}
+.navbar-collapse {
+    justify-content: space-between;
+}
+@font-face {
+    font-family: rubik;
+    src: url(/FONTS/Rubik-Regular.ttf);
+}
+.p-1 {
+    display: inline;
+    color: white;
+    font-family: rubik;
+}
+h1{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+h1::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    top: 22px;
+    right: 380px;
+}
+h1::before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    top: 22px;
+    left: 380px;
+}
+h2{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+#p-2 {
+    font-size: 25px;
+}
+#link {
+    color: white;
+}
+p{
+    color: rgba(120, 132, 125, 1);
+}
+h3 {
+    color: rgba(37, 61, 50, 1);
+}
+.left1 {
+    height: 250px;
+    background-image: url('/Assets/IMAGE/Group\ 1\ \(1\).png'); 
+    background-size: cover;
+}
+#back {
+    background-color: rgba(246, 251, 249, 1);
+    height: 450px;
+}
+#button {
+    border-color: rgba(163, 185, 56, 1);
+}
+.footer {
+    background-image: url('/Assets/IMAGE/Untitled\ design.png');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:576px) {
+    h2 {
+        font-size: 50px;
+    }
+    .img {
+        margin-top: 20px;
+    }
+    #back{
+        height: 700px;
+    }
+}
+@media (max-width:320px) {
+    .butt {
+        margin-top: 20px;
+    }
+}
+@media (max-width:1200px) {
+    h1:before, h1:after {
+        display: none;
+    }
+}
+@media (max-width:992px) {
+    .row,.main {
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+    margin-top: 30px;
+    }
+}
