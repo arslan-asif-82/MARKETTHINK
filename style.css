@@ -3,6 +3,10 @@
     background-image: url(Assets/IMAGE/ab.jpg);
     background-size: cover;
 }
+@font-face {
+    font-family: rubik;
+    src: url(/FONTS/Rubik-Regular.ttf);
+}
 * {
     font-family: rubik;
     position: sticky;
@@ -11,10 +15,6 @@
 }
 .navbar-collapse {
     justify-content: space-between;
-}
-@font-face {
-    font-family: rubik;
-    src: url(/FONTS/Rubik-Regular.ttf);
 }
 .text {
     margin-top: 70px;
@@ -92,7 +92,7 @@ h3 {
     border-color: rgba(163, 185, 56, 1);
 }
 .footer {
-    background-image: url('/Assets/IMAGE/Untitled\ design.png');
+    background-image: url(/Assets/IMAGE/Untitled\ design.png);
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
