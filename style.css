@@ -16,6 +16,9 @@
     font-family: rubik;
     src: url(/FONTS/Rubik-Regular.ttf);
 }
+.text {
+    margin-top: 70px;
+}
 .p-1 {
     display: inline;
     color: white;
@@ -50,6 +53,20 @@ h2{
     text-align: center;
     color: white;
 }
+h5::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: rgba(152, 170, 40, 1);
+    right: 70px;
+    top: 22px;
+    transition: .5s ease-in-out;
+}
+h5:hover::before{
+    width: 120px;
+}
 #p-2 {
     font-size: 25px;
 }
@@ -81,40 +98,71 @@ h3 {
     background-size: cover;
     padding: 60px 140px;
 }
+#h3-2{
+    font-size: 32px;
+    font-weight: 700;
+}
 .butt {
     background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+}
+.just {
+    justify-content: space-between;
+}
+.butt-1 {
+    background: transparent;
+    border:1px solid rgba(152, 170, 40, 1);
+    color: rgba(152, 170, 40, 1);
+}
+.butt-1:hover {
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+    border:1px solid rgba(152, 170, 40, 1);
 }
 input[type=email]:active {
     border: none;
 }
 #img-6 {
     position: absolute;
-    top: 0px;
+    top: 45px;
     left: 470px;
 }
 #img-7 {
     position: absolute;
-    top: 20px;
+    top: 65px;
     left: 90px;
     width: 80px;
 }
 #img-8 {
     position: absolute;
-    top: 250px;
+    top: 300px;
     left: 530px;
     width: 60px;
 }
 #img-9 {
     position: absolute;
-    top: 230px;
+    top: 270px;
     left: 200px;
     width: 30px;
 }
 #img-10 {
     position: absolute;
-    top: 220px;
+    top: 260px;
     left: 430px;
     width: 40px;
+}
+#img-11 {
+    position: absolute;
+    top: 200px;
+    left: 295px;
+}
+#img-12 {
+    position: absolute;
+    top: 200px;
+    left: 585px;
+}
+#img-13 {
+    position: absolute;
+    top: 200px;
+    left: 865px;
 }
 @media (max-width:576px) {
     h2 {
@@ -133,8 +181,14 @@ input[type=email]:active {
         padding: 30px 20px;
         background-image: url('Assets/IMAGE/Group\ 1\ \(1\).png');
     }
+    .left {
+        flex-direction: column;
+    }
+    .one {
+        margin-top: 20px;
+    }
 }
-@media (max-width:320px) {
+@media (max-width:364px) {
     .butt {
         margin-top: 20px;
     }
@@ -146,6 +200,9 @@ input[type=email]:active {
 }
 @media (max-width:1324px) {
     #img-6,#img-7,#img-8,#img-9,#img-10 {
+        display: none;
+    }
+    #img-13,#img-11,#img-12{
         display: none;
     }
 }
