@@ -1,6 +1,6 @@
 .hero{
     height: 655px;
-    background-image: url('/Assets/IMAGE/ab.jpg');
+    background-image: url(Assets/IMAGE/ab.jpg);
     background-size: cover;
 }
 * {
